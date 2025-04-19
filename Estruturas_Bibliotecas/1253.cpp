@@ -19,7 +19,7 @@ int main(){
         }
 
         sort(numbers.begin(), numbers.end(),
-            [](const pair<int, int> left, const pair<int, int> right){
+            [](pair<int, int> left, pair<int, int> right){
                 
                 if (left.second != right.second) {
                     return left.second < right.second;
